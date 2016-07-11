@@ -1,0 +1,9 @@
+<apex:page controller="thecontroller" tabstyle="lead">
+   <apex:pageBlock >
+      <apex:form >
+          <h1>There was a problem</h1><br/>
+          Error: <apex:outputText value="{!error}"/><br/>
+          Commit Flag: <apex:outputText value="{!commitFlag}"/>
+      </apex:form>
+   </apex:pageBlock>
+</apex:page>

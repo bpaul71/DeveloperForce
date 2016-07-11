@@ -1,0 +1,107 @@
+<apex:page docType="html-5.0" controller="CustomLoginController" showHeader="false" sidebar="false" standardStylesheets="false">
+<head>
+  <meta name="description" content="salesforce.com Customer Secure Login Page. Login to your salesforce.com Customer Account." />
+
+  <title>SchoolForce Community Login</title>
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="/css/sfdc180_global.css" />
+  <link rel="stylesheet" type="text/css" href="/css/sfdc180_page2.css" />
+  <style type="text/css">
+  a{color: #015BA7;}input.primary, .button, .btnPrimary{background: #1797C0;border: 1px solid #1797C0;}.button .label {color: #FFFFFF;}body{background-color:#CFEEF8;}#footer, #footer a{color:#222222;}#content{background-color:#f3f5f6;}#content{border:1px solid #CCCCCC; border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px; padding:10px;}#left_side{float:left; width: 320px;}#right_side{margin-left:350px;margin-top:100px;}@media (max-width: 900px){#right_side {padding-left:25px;display:block;margin-left:1px;margin-top:15px;}}
+  </style>
+  <style type="text/css">
+  html { visibility: hidden; } 
+  </style>
+  <script type="text/javascript">
+  if (self == top) {document.documentElement.style.visibility = 'visible';} else {document.write = ''; top.location = self.location; setTimeout(function(){document.body.innerHTML='';}, 1);window.self.onload=function(evt){document.body.innerHTML='';};}
+  </script>
+  <link rel="canonical" href="https://acumensolutionscommunity.force.com/schoolforce/CommunitiesLogin?locale=us" />
+  <script type="text/javascript">
+  function handleLogin() {document.login.un.value = document.login.username.value;document.login.width.value = screen.width;document.login.height.value = screen.height;}
+  function lazyload(){document.getElementById('pwcapsicon').src = '/img/icon/warning16.png';}
+  </script>
+</head>
+
+<body onload="lazyload();">
+  <div id="login">
+    <div id="login_wrapper">
+      <div id="left_side">
+        <div id="login_component">
+          <div id="logo_wrapper">
+              <img id="logo" class = "logo_salesforce" src="https://acumensolutionscommunity.force.com/schoolforce/servlet/servlet.ImageServer?id=01550000000UcLa&oid=00D300000000B6Z&lastMod=1377210383000" alt="Salesforce" border="0"/>
+          </div>
+
+          <div id="loginwidget">
+            <apex:form onsubmit="handleLogin();">
+              <fieldset style="display:none">
+                <input type="hidden" name="un" value="" /> <input type="hidden" name="width" value="" /> <input type="hidden" name=
+                "height" value="" /> <input type="hidden" name="hasRememberUn" value="true" /> <input type="hidden" name="startURL"
+                value="" /> <input type="hidden" name="loginURL" value="" /> <input type="hidden" name="loginType" value="" />
+                <input type="hidden" name="useSecure" value="true" /> <input type="hidden" name="local" value="" /> <input type=
+                "hidden" name="lt" value="standard" /> <input type="hidden" name="qs" value="" /> <input type="hidden" name=
+                "locale" value="" /> <input type="hidden" name="oauth_token" value="" /> <input type="hidden" name="oauth_callback"
+                value="" /> <input type="hidden" name="login" value="" /> <input type="hidden" name="serverid" value="" />
+                <input type="hidden" name="display" value="page" />
+              </fieldset>
+
+              <div class="loginbox_container" onclick="document.login.username.focus();">
+                <div onclick="document.getElementById('username').value = '';this.style.display='none';document.login.un.focus();" id="clrUsr" class="clrField"></div>
+
+                <div id="usrn">
+                  <div>
+                    <label for="username" class="zen-assistiveText">User Name</label><input type="email" placeholder="User Name" value="" class="input" name="username" id="username" 
+                      onkeyup="if(this.value != ''){document.getElementById('clrUsr').style.display='block';}else{document.getElementById('clrUsr').style.display='none';}" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="loginbox_container" onclick="document.login.password.focus();">
+                <div onclick=
+                "document.getElementById('password').value = '';this.style.display='none';document.login.pw.focus();" id="clrPw" class="clrField">
+                   
+                </div>
+
+                <div id="pswd">
+                  <div>
+                    <label for="password" class="zen-assistiveText">Password</label><input type="password" placeholder="Password"
+                    class="input" id="password" name="pw" onkeypress="checkCaps(event)" autocomplete="off" onkeyup=
+                    "if(this.value != ''){document.getElementById('clrPw').style.display='block';}else{document.getElementById('clrPw').style.display='none';}" />
+                  </div>
+                </div>
+              </div>
+
+              <div id="pwcaps" class="loginbox_container" style="display:none">
+                <img id="pwcapsicon" alt="Caps Lock is ON!" width="16" height="16" /> Caps Lock is ON!
+              </div>
+
+              <div class="loginbox_container">
+                  <apex:commandButton value="Login" action="{!login}" styleClass="label"/>
+              </div>
+
+              <div class="loginbox_container">
+                <div id="rem" class="wrapper_remember">
+                  <input type="checkbox" id="rememberUn" name="rememberUn" /> <label for="rememberUn">Remember User Name</label>
+                </div>
+              </div>
+
+              <div class="loginbox_container" id="forgot">
+                <span><a href="https://acumensolutionscommunity.force.com/schoolforce/secur/forgotpassword.jsp?locale=us">Forgot your password?</a></span>
+              </div>
+            </apex:form>
+            <script type="text/javascript">
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div id="right_side" class="communityOptions" style="font-size: 15px">
+          <p>Acumen Solutions employee? <a href="https://na3.salesforce.com/servlet/networks/session/create?site=0DM500000008Oui&refURL=http://acumensolutionscommunity.force.com/schoolforce/login&inst=5">Log in here</a></p>
+      </div>
+    </div>
+
+    <div id="footer">
+      Copyright © 2013 salesforce.com. All rights reserved.
+    </div>
+  </div>
+</body>
+</apex:page>

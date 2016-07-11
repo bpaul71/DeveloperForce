@@ -1,0 +1,16 @@
+<apex:page controller="LoginTest" >
+    
+    <h1>LOGIN TEST</h1>
+    <apex:form >
+    
+    <apex:outputPanel >Session ID: {!mysessionid}</apex:outputPanel>
+    <br/><br/>
+    
+    <apex:outputPanel >Destination URL: {!DestURL}</apex:outputPanel>
+    <br/><br/>
+    
+    <apex:commandLink onclick="window.open('{!DestURL}');" value="New Site" />
+    <br/>
+    
+    </apex:form>
+</apex:page>

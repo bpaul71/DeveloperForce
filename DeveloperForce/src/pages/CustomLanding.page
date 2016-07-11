@@ -1,0 +1,7 @@
+<apex:page docType="html-5.0" controller="CustomLandingController" action="{!forwardToCustomAuthPage}" showHeader="false" sidebar="false" standardStylesheets="false"> 
+    <div> <div> 
+    <h1>Hello, world!</h1> 
+    <p>…</p> 
+    <p><a>Click me!</a></p>
+    </div> </div> 
+</apex:page>

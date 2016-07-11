@@ -1,0 +1,34 @@
+<apex:page docType="html-5.0" controller="CustomLoginController" showHeader="false" sidebar="false" standardStylesheets="false">
+    <apex:stylesheet value="/css/sfdc180_global.css"/>
+    <apex:stylesheet value="/css/sfdc180_page2.css"/>
+    <div>
+    <apex:form styleClass="form-horizontal">
+      <fieldset>
+        <div id="legend">
+          <legend class="">Login</legend>
+        </div>
+        <div>
+          <!-- Name -->
+          <apex:outputLabel value="Username" for="username"/>
+          <div>
+              <apex:inputText value="{!username}" id="username" />
+          </div>
+        </div>
+        <div>
+          <!-- Password -->
+          <apex:outputLabel value="Password" for="password"/>
+          <div>
+            <apex:inputSecret id="password" value="{!password}" />
+          </div>
+        </div>
+        <div>
+          <!-- Button -->
+          <div></div>
+          <div>
+            <apex:commandButton action="{!login}" value="Login"/>
+          </div>
+        </div>
+      </fieldset>
+    </apex:form>
+    </div>
+</apex:page>
