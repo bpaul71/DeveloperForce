@@ -1,5 +1,0 @@
-#Adding in eclipse specific files to ignore
-/DeveloperForce/.project
-/DeveloperForce/Referenced Packages/
-/DeveloperForce/salesforce.schema
-/DeveloperForce/.settings/
