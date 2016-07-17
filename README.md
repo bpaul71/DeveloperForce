@@ -28,9 +28,6 @@ The next suggested change is to your Git Perspective.  It is recommended that wi
 ### Creating your Eclipse project
 You may already be doing your work in an existing Eclipse project that is connected to a Sandbox.  It is recommended that you no longer use that existing project and create a new Eclipse project by following these steps...  
 1. Open Eclipse to the desired directory  
- 
-  If this is a new Eclipse directory you may need to setup your **Force.com** and **Git** perspectives as described in an above section.  
-
 2. Switch to the **Git** perspective  
 3. Choose the option to **Clone a Git repository**  
 4. Enter the URI to the repo - **FILL IN THE REPO NAME**  
