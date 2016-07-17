@@ -28,7 +28,8 @@ The next suggested change is to your Git Perspective.  It is recommended that wi
 ### Creating your Eclipse project
 You may already be doing your work in an existing Eclipse project that is connected to a Sandbox.  It is recommended that you no longer use that existing project and create a new Eclipse project by following these steps...  
 1. Open Eclipse to the desired directory  
->If this is a new Eclipse directory you may need to setup your **Force.com** and **Git** perspectives as described in an above section.  
+ 
+  If this is a new Eclipse directory you may need to setup your **Force.com** and **Git** perspectives as described in an above section.  
 
 2. Switch to the **Git** perspective  
 3. Choose the option to **Clone a Git repository**  
@@ -50,7 +51,8 @@ You may already be doing your work in an existing Eclipse project that is connec
 16. Choose the **Import existing Eclipse projects** option and click **Next**  
 17. Click **Finish**  
 18. If you get an error you can ignore it by clicking **OK**  
-> Note: at this point your eclipse directory will not actually contain your source code.  Eclipse is now working out of the directory you saved the GitHub repository to.  When using eclipse you will still need to open the eclipse directory, not the GitHub directory.  
+
+  Note: at this point your eclipse directory will not actually contain your source code.  Eclipse is now working out of the directory you saved the GitHub repository to.  When using eclipse you will still need to open the eclipse directory, not the GitHub directory.  
 
 19. Right click the **Commercial_SFDC** project and select **Force.com** --> **Project Properties**  
 20. Enter your credentials for your sandbox  
