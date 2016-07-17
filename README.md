@@ -4,7 +4,7 @@
 
 ### Repository created using Eclipse
 This repository was created using Eclipse 4.x (Mars) and the Force.com IDE.  The are two reasons for setting up this repository with Eclipse  
-1. There are still a fair number of devlopers using Eclipse.
+1. There are still a fair number of devlopers using Eclipse.  
 2. In order for Eclipse to work properly with GitHub repositories it needs to have all of the Eclipse files saved into GitHub.  
 
 ### Setting up Eclipse for SFDC development using GitHub
@@ -35,7 +35,7 @@ You may already be doing your work in an existing project that is connected to a
 7. Be sure to have **master** selected as well as any sandbox branches that are appropriate to you  
 8. Click **Next**  
 9. Select a directory on your hard drive that differs from your eclipse directory.  An example might be c:\GitHub\Commercial_SFDC  
-10. Click Finish  
+10. Click **Finish**  
 11. Using the **Git Repositories** view navigate to the **Branches** --> **Local** folder to select the branch that represents your sandbox  
     If you don't have a branch that represents your sandbox then use the **Checkout branch, tag, or reference** toolbar button to create a branch that is the same as your sandbox name.  
 12. Switch to the **Force.com** perspective  
@@ -45,7 +45,7 @@ You may already be doing your work in an existing project that is connected to a
 16. Choose the **Import existing Eclipse projects** option and click **Next**  
 17. Click **Finish**  
 18. If you get an error you can ignore it by clicking **OK**  
-> Note: at this point your eclipse directory will not actually contain your source code.  Eclipse is now working out of the directory you saved the GitHub repository to.  When using eclipse you will still need to open the eclipse directory, not the GitHub directory.
+> Note: at this point your eclipse directory will not actually contain your source code.  Eclipse is now working out of the directory you saved the GitHub repository to.  When using eclipse you will still need to open the eclipse directory, not the GitHub directory.  
 19. Right click the **Commercial_SFDC** project and select **Force.com** --> **Project Properties**  
 20. Enter your credentials for your sandbox  
 21. When asked if you'd like to refetch and overwrite your Force.com components select **Yes**  
