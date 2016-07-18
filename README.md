@@ -1,4 +1,6 @@
-# DeveloperForce
+# Commercial_SFDC
+
+This file explains how to setup your local IDE to be either Eclipse or SublimeText with MavensMate
 
 ## Eclipse Notes
 
@@ -53,3 +55,25 @@ Note: at this point your eclipse directory will not actually contain your source
 21. When asked if you'd like to refetch and overwrite your Force.com components select **Yes**  
 
 Now your branch has all of your code.  You can selectively decide what to push up to higher branches.
+
+## SublimeText with MavensMate (hereafter referred to as MavensMate)  
+Since the repository was setup using Eclipse, the process to setup MavensMate isn't overly straightforward.  If anyone knows of a way to simplify the process that is outlined below please do update this documentation.  
+
+The key issue with being able to use an Eclipse project in MavensMate is the directory structure.  Eclipse creates a directory structure like "C:\workspace\Commercial_SFDC\Commercial_SFDC\src".  When adding in Git to work with Eclipse the .git folder structure is located in the folder "C:\workspace\Commercial_SFDC"  
+
+MavensMate likes to use a directory structure of "C:\workspace\Commercial_SFDC\src".  Notice difference in where the "src" directory lies between the two IDEs.  
+
+The directions below are written assuming you are working out of the "C:\workspace" directory structure for your typical MavensMate development.  Feel free to use whatever directory structure you desire.
+
+1. From within MavensMate click the menu option **MavensMate** --> **Settings** --> **User**  
+2. Edit the line that has mm_workspace to change "C:\\Workspace" to instead be "C:\\Workspace\\Commercial_SFDC"  
+3. Save the file.  
+4. Create a Commercial_SFDC MavensMate project for the environment you are trying to connect to in the usual manner using the folder "C:\\Workspace\\Commercial_SFDC"  
+5. Close out of MavensMate  
+6. Rename "C:\Workspace\Commercial_SFDC" to "C:\Workspace\Commercial_SFDC_MM"
+7. Checkout the Commercial_SFDC repo into the "C:\workspace" directory
+8. You are likely in the master branch, you should switch to a branch that represents your development environment.  An example might be to run the command "git checkout -b AcuCaseDev"  
+9. Copy everything from "C:\Workspace\Commercial_SFDC_MM\Commercial_SFDC" to "C:\Workspace\Commercial_SFDC\Commercial_SFDC"  
+10. Open SublimeText to C:\Workspace\Commercial_SFDC\Commercial_SFDC  
+
+Now your MavensMate workspace has all of the files from your Sandbox and your local Git repo is updated with all of those changes.
