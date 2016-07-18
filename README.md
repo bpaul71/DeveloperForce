@@ -1,12 +1,41 @@
 # Commercial_SFDC
 
 Due to the simultaneous development efforts by many developers it is important that you use branches for your development and use clear naming conventions for your branch names.  
+
+Every Sandbox that has development being done in it should have it's own branch. For example, the EEDev Sandbox should have an equivalent EEDev branch.  
+When doing development, you should create a branch off of the sandbox branch.  
+
 The suggested naming convention is: [project]\_[subproject]\_[case]  
-Example: MRS_In-Flight_Case-0234567  
-Example where subproject is not needed: BAU_Case-0123456  
+
+Example 1:  
+* You are doing work for the MRS project 
+* You will need to do your work in the EEDev Sandbox  
+* For the MRS project you are doing changes for some "In-Flight" functionality  
+* You've been assigned case 0234567  
+
+Before doing your development...  
+* Your IDE should be pointed to the EEDev sandbox  
+* Your local Git environment is using the EEDev branch
+
+Now that you are ready to do your development 
+* You should create a local branch off of the EEDev branch and call it MRS_In-Flight_Case-0234567  
 
 
-There are many IDEs available for doing Salesforce development.  Below are instructions to setup your IDE to be either Eclipse or SublimeText with MavensMate.  
+Example 2: Where subproject is not needed:  
+Not every project has a subproject.  An example of that is BAU cases.  
+* You are doing BAU work
+* You need to do your work in the AcuCaseDev environment
+* You've beeen assigned case 0123456
+
+Before doing your development...  
+* Your IDE should be pointed to the AcuCaseDev sandbox  
+* Your local Git environment is using the AcuCaseDev branch
+
+Now that you are ready to do your development 
+* You should create a local branch off of the AcuCaseDev branch and call it BAU_Case-0123456  
+
+
+There are many IDEs available for doing Salesforce development.  Below are instructions to setup your IDE to be either **Eclipse** or **SublimeText with MavensMate**.  
 
 ## Eclipse Notes
 
