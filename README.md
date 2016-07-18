@@ -8,7 +8,7 @@ When doing development, you should create a branch off of the sandbox branch.
 The suggested naming convention is: [project]\_[subproject]\_[case]  
 
 ```
-Example 1:  
+**Example 1:**  
 * You are doing work for the MRS project 
 * You will need to do your work in the EEDev Sandbox  
 * For the MRS project you are doing changes for some "In-Flight" functionality  
@@ -22,7 +22,7 @@ Now that you are ready to do your development
 * You should create a local branch off of the EEDev branch and call it MRS_In-Flight_Case-0234567  
 ```
 ```
-Example 2: Where subproject is not needed:  
+**Example 2: Where subproject is not needed:**  
 Not every project has a subproject.  An example of that is BAU cases.  
 * You are doing BAU work
 * You need to do your work in the AcuCaseDev environment
