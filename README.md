@@ -1,9 +1,9 @@
 # Commercial_SFDC
 
-Due to the simultaneous development efforts by many developers it is important that we follow it is important to use clear naming convention for your development.  
-The suggested naming convention is: [project]_[subproject]_[case]  
-Example: MRS_In-Flight_Case-0234567  
-Example where subproject is not needed: BAU_Case-0123456  
+Due to the simultaneous development efforts by many developers it is important that you use branches for your development and use clear naming conventions for your branch names.  
+The suggested naming convention is: [project]\\_[subproject]\\_[case]  
+Example: MRS\\_In-Flight\\_Case-0234567  
+Example where subproject is not needed: BAU\\_Case-0123456  
 
 
 There are many IDEs available for doing Salesforce development.  Below are instructions to setup your IDE to be either Eclipse or SublimeText with MavensMate.  
@@ -69,6 +69,7 @@ The key issue with being able to use an Eclipse project in MavensMate is the dir
 
 MavensMate likes to use a directory structure of "C:\workspace\Commercial_SFDC\src".  Notice difference in where the "src" directory lies between the two IDEs.  
 
+### Creating your MavensMate project
 The directions below are written assuming you are working out of the "C:\workspace" directory structure for your typical MavensMate development.  Feel free to use whatever directory structure you desire.
 
 1. From within MavensMate click the menu option **MavensMate** --> **Settings** --> **User**  
