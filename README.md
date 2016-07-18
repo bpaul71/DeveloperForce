@@ -1,6 +1,12 @@
 # Commercial_SFDC
 
-This file explains how to setup your local IDE to be either Eclipse or SublimeText with MavensMate
+Due to the simultaneous development efforts by many developers it is important that we follow it is important to use clear naming convention for your development.  
+The suggested naming convention is: [project]_[subproject]_[case]  
+Example: MRS_In-Flight_Case-0234567  
+Example where subproject is not needed: BAU_Case-0123456  
+
+
+There are many IDEs available for doing Salesforce development.  Below are instructions to setup your IDE to be either Eclipse or SublimeText with MavensMate.  
 
 ## Eclipse Notes
 
@@ -66,9 +72,10 @@ MavensMate likes to use a directory structure of "C:\workspace\Commercial_SFDC\s
 The directions below are written assuming you are working out of the "C:\workspace" directory structure for your typical MavensMate development.  Feel free to use whatever directory structure you desire.
 
 1. From within MavensMate click the menu option **MavensMate** --> **Settings** --> **User**  
-2. Edit the line that has mm_workspace to change "C:\\Workspace" to instead be "C:\\Workspace\\Commercial_SFDC"  
+2. Edit the line that has mm_workspace to add in new location.  An example of how you might want this to look is  
+"mm_workspace" : ["C:\\Workspace","C:\\Workspace\\DeveloperForce"]  
 3. Save the file.  
-4. Create a Commercial_SFDC MavensMate project for the environment you are trying to connect to in the usual manner using the folder "C:\\Workspace\\Commercial_SFDC"  
+4. Create a Commercial_SFDC MavensMate project for the sandbox environment you are trying to connect to in the usual manner using the workspace folder "C:\\Workspace\\Commercial_SFDC"  
 5. Close out of MavensMate  
 6. Rename "C:\Workspace\Commercial_SFDC" to "C:\Workspace\Commercial_SFDC_MM"
 7. Checkout the Commercial_SFDC repo into the "C:\workspace" directory
